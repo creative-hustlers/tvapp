@@ -8,7 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.tvapp"
+        applicationId "com.panarmenian.tv"
         minSdk 21
         targetSdk 33
         versionCode 1

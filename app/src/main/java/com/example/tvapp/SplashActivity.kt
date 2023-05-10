@@ -8,6 +8,9 @@ import androidx.fragment.app.FragmentActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : FragmentActivity() {
+
+    private val baseUrl = "https://www.panarmenian.tv/wp-json/"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
@@ -16,7 +19,7 @@ class SplashActivity : FragmentActivity() {
             val i = Intent(this@SplashActivity, MainActivity::class.java)
             startActivity(i)
             finish()
-        }, 5000)
+        }, 2000)
     }
 
 }
