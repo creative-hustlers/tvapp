@@ -17,7 +17,6 @@ class MainActivity : FragmentActivity() {
 
     private val baseUrl = "https://www.panarmenian.tv/wp-json/"
 
-//    var videoUrl = "https://us1.ottstream.live:17071/C279/index.m3u8?token=123TREWQ456"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,5 +60,10 @@ class MainActivity : FragmentActivity() {
                 }
             }
         })
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        getData()
     }
 }
